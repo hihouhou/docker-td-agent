@@ -23,4 +23,4 @@ RUN curl https://packages.treasuredata.com/GPG-KEY-td-agent | apt-key add - && \
 #Add configuration file for binary
 ADD td-agent.conf /etc/td-agent/
 
-#CMD ["/usr/local/bin/consul", "agent", "-config-file","/etc/consul.d/server/server.json"]
+CMD ["td-agent"]
